@@ -1,0 +1,86 @@
+body {
+    font-family: Instrument, sans-serif;
+    margin: 0;
+}
+
+h1 {
+    font-size: 4em;
+    margin: 0px;
+    line-height: 1;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 0px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    background-color: hsl(240, 4%, 91%);
+}
+
+/* Ensures spacing between sections */
+.home-container {
+    padding: 10vw 5vh;
+    margin: 0;
+    height: 30vw;
+    align-content: center;
+}
+
+/* Alternate background colors */
+#home-landing {
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+    flex-direction: row; /* Places items side by side */
+    width: 100%;
+    background-color: #f8f9fa; /* Light gray */
+}
+
+.background1 {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+
+}   
+
+.background2 {
+    background-color: #070020;
+    color: rgb(255, 255, 255);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 20px; /* Controlled gap between image and text */
+    padding: 10vw;
+}
+
+#portrait {
+    width: auto;
+    max-width: 300px;
+    height: auto;
+    margin: 0;
+}
+
+p {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+    margin: 0; /* Optional: remove margins if needed */
+}
+
+/* Footer Styling */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+}

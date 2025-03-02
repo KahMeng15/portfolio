@@ -1,0 +1,791 @@
+body {
+    font-family: Instrument, sans-serif;
+    margin: 0;
+}
+
+h1 {
+    font-size: clamp(1.5em, 5vw, 4em); 
+    margin: 0px;
+    line-height: 1;
+    font-family: 'StretchPro', sans-serif;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 0px;
+    font-family: 'InstrumentSans', sans-serif;
+    font-weight: 500;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; 
+    align-items: left; 
+    background-color: hsl(240, 4%, 91%);
+    flex-direction: column;
+    font-family: 'InstrumentSans', sans-serif;
+    font-size: 1em;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+#logo {
+    font-size: 2.5rem; 
+    font-weight: bold;
+    padding-top: 5vh;
+    padding-bottom: 1.5vw;
+    background-color: #02096c;
+    color: white; 
+    padding-left: 15px;
+    border-bottom: 2px solid #000000;
+    font-family: 'StretchPro', sans-serif;
+    text-decoration: none; 
+}
+
+#logo a {
+    text-decoration: none;
+    color: inherit; 
+}
+
+#links {
+    display: flex; 
+    align-items: center; 
+    gap: 15px; 
+}
+
+#links a {
+    color: black; 
+    text-decoration: none;
+    font-size: 1rem; 
+    padding: 5px 0; 
+
+}
+
+#socials a {
+    color: black; 
+    text-decoration: none;
+    font-size: 1rem; 
+    margin: 0 2px;
+    display: inline-block; 
+}
+
+
+#links a:hover {
+    text-decoration: underline; 
+}
+
+#main-landing {
+    position: relative;
+    display: flex;
+    flex-direction: column; 
+    align-items: left; 
+    justify-content: center; 
+    text-align: left;
+    height: 100vh; 
+    color: white;
+    padding: 0px 50px;
+    overflow: hidden;
+    gap: 0px;
+}
+
+#main-landing::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../images/default1.jpg') center/cover no-repeat;
+    z-index: -2; 
+
+}
+
+#main-landing::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(2, 9, 108, 0.6); 
+    z-index: -1;
+}
+
+#main-landing-cs {
+    position: relative;
+    display: flex;
+    flex-direction: column; 
+    align-items: left;
+    justify-content: center; 
+    text-align: left; 
+    height: 100vh; 
+    color: white;
+    padding: 0px 50px;
+    overflow: hidden;
+    gap: 0px;
+}
+
+#main-landing-cs::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../images/comp-sci.JPG') center/cover no-repeat;
+    z-index: -2; /* Move the image behind everything */
+
+}
+
+#main-landing-cs::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(2, 9, 108, 0.6); /* Solid blue overlay */
+    z-index: -1; /* Places it above the image but behind text */
+}
+
+#main-landing-ct {
+    position: relative;
+    display: flex;
+    flex-direction: column; /* Stack items in a column */
+    align-items: left; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    text-align: left; /* Align text to center */
+    height: 100vh; /* Full screen height */
+    color: white;
+    padding: 0px 50px;
+    overflow: hidden;
+    gap: 0px;
+}
+
+#main-landing-ct::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../images/contact.JPG') center/cover no-repeat;
+    z-index: -2; /* Move the image behind everything */
+
+}
+
+#main-landing-ct::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(2, 9, 108, 0.6); /* Solid blue overlay */
+    z-index: -1; /* Places it above the image but behind text */
+}
+
+#main-landing-ld {
+    position: relative;
+    display: flex;
+    flex-direction: column; /* Stack items in a column */
+    align-items: left; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    text-align: left; /* Align text to center */
+    height: 100vh; /* Full screen height */
+    color: white;
+    padding: 0px 50px;
+    overflow: hidden;
+    gap: 0px;
+}
+
+#main-landing-ld::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../images/leadership.JPG') center/cover no-repeat;
+    z-index: -2; /* Move the image behind everything */
+
+}
+
+#main-landing-ld::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(2, 9, 108, 0.6); /* Solid blue overlay */
+    z-index: -1; /* Places it above the image but behind text */
+}
+
+
+
+
+/* Ensures spacing between sections */
+.home-container {
+    padding: 10vw 5vh;
+    margin: 0;
+    height: 30vw;
+    align-content: center;
+}
+
+#home-landing {
+    position: relative;
+    display: flex;
+    flex-direction: column; /* Stack items in a column */
+    align-items: left; /* Align items to the left */
+    justify-content: center; /* Center vertically */
+    text-align: left; /* Align text */
+    height: 90vh; /* Full screen height */
+    color: white;
+    padding: 0px 50px;
+    overflow: hidden;
+    gap: 0px;
+}
+
+#home-landing::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../images/main0.JPG') center/cover no-repeat;
+    z-index: -2; /* Move the image behind everything */
+    filter: blur(8px); /* Apply a blur effect */
+}
+
+#home-landing::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(2, 9, 108, 0.456); /* Blue overlay */
+    z-index: -1; /* Places it above the image but behind text */
+    backdrop-filter: blur(0px); /* Adds blur effect to everything behind it */
+}
+
+
+.background1 {
+    background-color: #000000;
+    padding: 20Vh 3%;
+    color: rgb(255, 255, 255);
+
+}   
+
+.background2 {
+    background-color: #070020;
+    padding: 20Vh 3%;
+    color: rgb(255, 255, 255);
+}
+
+#home-landing .container {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    gap: 0px; /* Adds space between image and text */
+    padding: 3vw;
+    height: 80vh;
+}
+
+#home-landing .container > div:first-child {
+    flex: 1; /* 1 part for the image */
+}
+
+#home-landing .container > div:last-child {
+    flex: 3; /* 3 parts for the text */
+}
+
+
+
+#portrait {
+    width: 80%; /* Ensures the image fills its container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 12px; /* Optional: Rounds image corners */
+}
+
+p {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+    margin: 0; /* Optional: remove margins if needed */
+}
+
+/* Footer Styling */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+}
+
+@font-face {
+    font-family: 'StretchPro';
+    src: url('/fonts/StretchPro.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'InstrumentSans';
+    src: url('/fonts/InstrumentSans-VariableFont_wdth,wght') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#section1, #section2, #section3, #section4{
+    padding: 20px 0px;
+    text-align: justify;
+}
+
+.blue {
+    background-color: #02096c;
+    color: white;
+}
+
+.main-container {
+    display: flex;
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height (adjust as needed) */
+}
+
+.main-container2 {
+    display: flex;
+    width: 100vw; /* Full viewport width */
+    height: 50vh; /* Full viewport height (adjust as needed) */
+}
+
+#image-container, #text-container {
+    width: 50%; /* Each takes up exactly half of the screen */
+    height: 100%; /* Full height */
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+
+#image-container img {
+    width: 100%;   /* Makes image take full width of container */
+    height: 100%;  /* Makes image take full height */
+    object-fit: cover;
+}
+
+#image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5; /* Change if needed */
+    overflow: hidden; /* Prevents overflow */
+}
+
+#image-container img {
+    width: 100%;   /* Makes image take full width of container */
+    height: 100%;  /* Makes image take full height */
+}
+
+#image-container2 {
+    width: 50%; /* Takes half of the screen */
+    height: 100%; /* Full height of parent */
+    box-sizing: border-box;
+    padding: 30px;
+    
+    /* Center image inside the container */
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+}
+
+#image-container2 img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation */
+}
+
+#image-container2 img:hover {
+    transform: translateY(-5px); /* Moves the image up slightly */
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.3); /* Enhances shadow for depth effect */
+}
+
+#text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px; /* Adds spacing inside the container */
+    text-align: left;
+}
+
+#summary {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #000000;
+}
+
+#summary h2 {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow */
+    font-family: 'StretchPro', sans-serif;
+    font-size: 2vw;
+}
+
+.summary-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adds spacing between boxes */
+    justify-content: center; /* Centers the boxes */
+}
+
+.summary-box {
+    width: 250px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.summary-box {
+    width: 250px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.summary-box:hover {
+    transform: translateY(-5px);
+}
+
+/* Make the text inside the box a big clickable link */
+.summary-box a {
+    font-family: 'StretchPro', sans-serif;
+    font-size: 1vw;
+    color: #000000;
+    text-decoration: none;
+    display: block; 
+    padding: 10px; 
+}
+
+.summary-box a:hover {
+    color: #0056b3;
+}
+
+#summary-header {
+    margin-bottom: 20px; /* Adjust space between header and boxes */
+}
+
+#skill {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #000000;
+}
+
+#skill h1 {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: 'StretchPro', sans-serif;
+    font-size: 2vw;
+    margin-bottom: 30px;
+}
+
+.skill-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-content: center;
+    min-height: 10vh;
+    position: relative;
+}
+
+
+/* Fix last row alignment by adding an invisible balancing box */
+
+
+.skill-box {
+    width: 250px;
+    min-height: 100px; /* Increased height for text */
+    padding: 10px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+    
+    /* Center content */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-box:hover {
+    transform: translateY(-5px);
+}
+
+/* Remove underline from links */
+.skill-box a {
+    text-decoration: none; /* Removes underline */
+}
+
+.skill-box h2 {
+    font-family: 'StretchPro', sans-serif;
+    font-size: 20px; /* Fixed font size for consistency */
+    color: #000000;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    text-align: center;
+    padding: 10px;
+}
+
+.skill-box p {
+    font-size: 14px;
+    color: #555;
+}
+
+.moreinfo-box {
+    margin-top: 5vh;
+    width: 20vw;
+    height: 4vh; /* Ensures a consistent height */
+    padding: 10px 10px;
+    background: rgb(188, 188, 188);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+    
+    /* Center text vertically */
+    display: flex;image
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.moreinfo-box:hover {
+    transform: translateY(-5px);
+}
+
+.moreinfo-box h2 {
+    font-family: 'StretchPro', sans-serif;
+    font-size: 15px;
+    color: #000000;
+}
+
+.showcase-container {
+    padding: 50px 50px;
+}
+
+#video-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#video-section h2 {
+    font-size: 2vw;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-container video {
+    width: 90%; /* Adjust width to fit your layout */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.center-container {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    margin-bottom: 10vh;
+}
+
+.moreinfo-box2 {
+    width: auto; 
+    height: 5vh;  
+    padding: 5px 10px;
+    background: rgb(132, 126, 245);portrait
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+
+    /* Center text inside */
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.moreinfo-box2:hover {
+    transform: translateY(-5px);
+    text-decoration: none;
+}
+
+.moreinfo-box2 a {
+    text-decoration: none; /* Remove default underline */
+}
+
+.moreinfo-box2 h2 {
+    font-family: 'StretchPro', sans-serif;
+    font-size: 1vw; /* Smaller text */
+    color: #000000;
+}
+
+#contact-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 50px;
+    background-color: #f5f5f5;
+}
+
+.contact-box {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    
+    flex-grow: 1; /* Allows boxes to expand equally */
+    flex-basis: 0; /* Makes them start at equal sizes */
+    min-width: 250px; /* Ensures they don’t get too small */
+}
+
+.contact-box h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #02096c;
+    font-family: 'StretchPro', sans-serif;
+}
+
+.contact-box p, .social-icons a {
+    font-size: 1rem;
+    color: #333;
+    text-decoration: none;
+}
+
+.contact-box a {
+    display: inline-block;
+    color: #0056b3;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.contact-box a:hover {
+    color: #02096c;
+}
+
+.contact-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Styling for Social Media Links */
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    padding: 8px;
+    border-radius: 8px;
+    background: #e0e0e0;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.social-icons a i {
+    font-size: 1.2rem;
+    color: #02096c;
+}
+
+.social-icons a:hover {
+    background: #d1d1d1;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #contact-details {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-box {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1100px) {
+    #home-landing .container > div:first-child,
+    #home-landing .container > div:last-child {
+        flex: 1; /* Both sections take equal space */
+    }
+}
+
+#mission, #current {
+    display: flex;
+    flex-direction: column; /* Stack text elements */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    text-align: center; /* Center the text */
+    height: 400px; /* Set a fixed height (adjust as needed) */
+    padding: 50px; /* Maintain padding */
+}
+
+#mission h1, #current h1 {
+    font-size: 40px; /* Adjust as needed */
+}
+
+
+
+#mission {
+    background-color: #02096c;
+    color: white;
+}
+
+#current {
+    background-color: #2d3168;
+    color: white;
+}
+
+button, 
+button a, 
+.moreinfo-box a, 
+.moreinfo-box2 a {
+    text-decoration: none; /* Removes underline */
+}
+
+#head h3,
+#head p {
+    margin-bottom: 0px; /* Reduce space below each element */
+    font-style: italic;
+}
+
+#head h3 {
+    margin-top: 20px; /* Reduce space above h3 elements */
+}
