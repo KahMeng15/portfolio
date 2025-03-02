@@ -789,3 +789,38 @@ button a,
 #head h3 {
     margin-top: 20px; /* Reduce space above h3 elements */
 }
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #000; /* Change background if needed */
+    color: white;
+    text-align: left; /* Align all text left by default */
+}
+
+#head-foot {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align text to the left */
+}
+
+#head-foot h1, #head-foot p {
+    margin: 0; /* Remove default margins */
+}
+
+#socials-foot {
+    display: flex;
+    gap: 15px; /* Adjust spacing between icons */
+}
+
+#socials-foot a {
+    color: white;
+    font-size: 24px; /* Adjust icon size */
+    text-decoration: none;
+}
+
+#socials-foot a:hover {
+    color: gray; /* Optional hover effect */
+}
