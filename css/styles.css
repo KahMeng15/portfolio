@@ -7,7 +7,7 @@ h1 {
     font-size: clamp(1.5em, 5vw, 4em); 
     margin: 0px;
     line-height: 1;
-    font-family: 'StretchPro', sans-serif;
+    font-family: 'Syne-Extra', sans-serif;
 }
 
 h2 {
@@ -42,7 +42,7 @@ nav {
     color: white; 
     padding-left: 15px;
     border-bottom: 2px solid #000000;
-    font-family: 'StretchPro', sans-serif;
+    font-family: 'Syne-Extra', sans-serif;
     text-decoration: none; 
 }
 
@@ -330,8 +330,8 @@ footer {
 }
 
 @font-face {
-    font-family: 'StretchPro';
-    src: url('/fonts/StretchPro.otf') format('truetype');
+    font-family: 'Syne-Extra';
+    src: url('/fonts/Syne-Extra.otf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -433,7 +433,7 @@ footer {
 #summary h2 {
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow */
-    font-family: 'StretchPro', sans-serif;
+    font-family: 'Syne-Extra', sans-serif;
     font-size: 2vw;
 }
 
@@ -470,7 +470,7 @@ footer {
 
 /* Make the text inside the box a big clickable link */
 .summary-box a {
-    font-family: 'StretchPro', sans-serif;
+    font-family: 'Syne-Extra', sans-serif;
     font-size: 1vw;
     color: #000000;
     text-decoration: none;
@@ -495,7 +495,7 @@ footer {
 #skill h1 {
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    font-family: 'StretchPro', sans-serif;
+    font-family: 'Syne-Extra', sans-serif;
     font-size: 2vw;
     margin-bottom: 30px;
 }
@@ -541,7 +541,7 @@ footer {
 }
 
 .skill-box h2 {
-    font-family: 'StretchPro', sans-serif;
+    font-family: 'Syne-Extra', sans-serif;
     font-size: 20px; /* Fixed font size for consistency */
     color: #000000;
     word-wrap: break-word;
@@ -578,7 +578,7 @@ footer {
 }
 
 .moreinfo-box h2 {
-    font-family: 'StretchPro', sans-serif;
+    font-family: 'Syne-Extra', sans-serif;
     font-size: 15px;
     color: #000000;
 }
@@ -644,7 +644,7 @@ footer {
 }
 
 .moreinfo-box2 h2 {
-    font-family: 'StretchPro', sans-serif;
+    font-family: 'Syne-Extra', sans-serif;
     font-size: 1vw; /* Smaller text */
     color: #000000;
 }
@@ -675,7 +675,7 @@ footer {
     font-size: 1.5rem;
     margin-bottom: 10px;
     color: #02096c;
-    font-family: 'StretchPro', sans-serif;
+    font-family: 'Syne-Extra', sans-serif;
 }
 
 .contact-box p, .social-icons a {
